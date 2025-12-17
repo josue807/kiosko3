@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍔 Restaurante Online</h1>
+    </header>
+
+    <main class="container">
+        <section class="customer-info">
+            <label for="customerName">Tu nombre:</label>
+            <input type="text" id="customerName" placeholder="Tu Nombre" required>
+        </section>
+
+        <section class="products">
+            <h2>Menú</h2>
+            <div id="productsContainer" class="products-grid"></div>
+        </section>
+
+        <section class="order-summary">
+            <h2>Total: <span id="total">0€</span></h2>
+            <button id="submitOrder">Enviar pedido</button>
+        </section>
+
+        <section id="receiptContainer" class="hidden">
+            <h2>Recibo</h2>
+            <pre id="receipt"></pre>
+            <button id="downloadReceipt">Descargar Recibo</button>
+        </section>
+
+        <div id="message" class="hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
